@@ -14,4 +14,4 @@ COPY ./images ./images
 COPY ./.streamlit ./.streamlit
 COPY . /app
 ENTRYPOINT [ "streamlit", "run" ]
-CMD ["main.py"]
+CMD ["main.py --server.port=9000"]
