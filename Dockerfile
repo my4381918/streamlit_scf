@@ -13,5 +13,5 @@ EXPOSE 8501
 COPY ./images ./images
 COPY ./.streamlit ./.streamlit
 COPY . /app
-ENTRYPOINT [ "streamlit", "run" ]
-CMD ["main.py --server.port=9000"]
+ENTRYPOINT [ "streamlit", "run", "--server.port=9000"]
+CMD ["main.py"]
